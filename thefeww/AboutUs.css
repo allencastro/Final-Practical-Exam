@@ -1,0 +1,306 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+
+
+.heading{
+  
+  font-family: Lucida Sans;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+
+/* NAVBAR */
+nav{
+  background: #0050A1;
+  height: 10%;
+  min-height: 60px;
+  max-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+label.logo{
+  color: rgb(243, 239, 239);
+  font-size: 2rem;
+  line-height: 60px;
+  padding: 0 10%;
+  font-weight: 700;
+}
+
+.hamburger{
+  display: block;
+  margin: 0;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+
+nav ul{
+  flex-direction: row;
+  margin: 0;
+  margin-right: 10%;
+  display: none;
+}
+
+nav ul li{
+  margin: 0 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+nav ul li a{
+  color: rgb(243, 239, 239);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+a.active{
+  color: rgb(207, 207, 207);
+}
+
+a:hover{
+  color: white;
+  background: #070707;
+  transition: .5s;
+}
+
+a.active:hover{
+  background: none;
+  cursor: default;
+  color: rgb(243, 239, 239);
+}   
+
+@media (min-width: 600px) {
+  nav ul{
+      display: flex;
+  }
+  .hamburger{
+      display: none;
+  }
+
+}
+
+.Garay{
+    border-radius: 25px;
+    height: 210px;
+    width: 210px;
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-bottom: 20%;
+    float: left;  
+    position: relative;
+    top: 50px;
+
+
+}
+
+.GarayDescription{
+    font-size: 20px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 50px;
+
+}
+
+.garaybutton{
+  
+padding: 5px 15px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #ffffff;
+background-color: rgb(0, 0, 0);
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+position: relative;
+top: 55px;
+}
+
+.garaybutton:hover {background-color: #0050A1}
+
+.garaybutton:active {
+  background-color: #53cfee;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ 
+}
+
+.Me{
+    border-radius: 25px;
+    height: 210px;
+    width: 210px;
+    margin-right: 10%;
+    margin-left: 3%;
+    margin-bottom: 20%;
+    position: relative;
+    top: 200px;
+    float: right;
+
+
+}
+
+.MyDescription{
+
+    font-size: 20px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 165px;
+}
+
+
+.mybutton{
+      
+  padding: 5px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: relative;
+  top: 170px;
+  left: 145px;
+
+}
+
+.mybutton:hover {background-color: #0050A1}
+
+.mybutton:active {
+  background-color: #53cfee;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.Sanchez{
+    border-radius: 25px;
+    height: 210px;
+    width: 210px;
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-bottom: 20%;
+    float: left;
+    position: relative;
+    left: -400px;
+    top: 300px;
+}
+
+.SanchezDescription{
+        font-size: 20px;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        position: relative;
+        top: 240px;
+        left: -400px;
+        
+    
+    }
+
+
+
+    .sanchezbutton {
+      padding: 5px 15px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #ffffff;
+      background-color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      position: relative;
+      top: 245px;
+      left: -400px;
+      
+    }
+    .sanchezbutton:hover {background-color: #0050A1}
+    
+    .sanchezbutton:active {
+      background-color: #53cfee;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+      
+    }
+
+.Gamboa{
+    border-radius: 25px;
+    height: 210px;
+    width: 210px;
+    margin-right: 10%;
+    margin-left: 3%;
+    margin-bottom: 20%;
+    float: right;
+    position: relative;
+    top: 150px;
+}
+
+.GamboaDescription{
+
+    font-size: 20px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 320px;
+}
+
+.gamboabutton{
+
+  padding: 5px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: relative;
+  top: 325px;
+  left: 145px;
+
+
+}
+    
+.gamboabutton:hover {background-color: #0050A1}
+
+.gamboabutton:active {
+  background-color: #197bdc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+  
+
+  
+
+

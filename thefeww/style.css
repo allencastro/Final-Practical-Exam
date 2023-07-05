@@ -1,0 +1,258 @@
+/* IMPORTS */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: montserrat;
+}
+
+
+/* NAVBAR */
+nav{
+    background: #0050A1;
+    height: 10%;
+    min-height: 60px;
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+label.logo{
+    color: rgb(243, 239, 239);
+    font-size: 2rem;
+    line-height: 60px;
+    padding: 0 10%;
+    font-weight: 700;
+}
+
+.hamburger{
+    display: block;
+    margin: 0;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.checkbtn{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+nav ul{
+    flex-direction: row;
+    margin: 0;
+    margin-right: 10%;
+    display: none;
+}
+
+nav ul li{
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    color: rgb(243, 239, 239);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+a.active{
+    color: rgb(207, 207, 207);
+}
+
+a:hover{
+    color: white;
+    background: #000000;
+    transition: .5s;
+}
+
+a.active:hover{
+    background: none;
+    cursor: default;
+    color: rgb(243, 239, 239);
+}   
+
+
+/* SHOWCASE / HERO SECTION */
+
+.showcase{
+    width: 100%;
+    height: 500px;
+    background-image: url("img/BgGaming.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Moon Dance', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase_heading{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.showcase_subheading{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.showcase_cta{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:none;
+    margin: 1rem;
+}
+
+span.showcase_cta{
+    font-family: Montserrat;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.container{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.greeting{
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-family: "Moon Dance", cursive;
+    color: #000000;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+.content_item img{
+    width: 65%;
+    border-radius: 15px;
+    max-width: 200px;
+}
+
+.info .heading{
+    font-family: "Moon Dance", cursive;
+    margin: 12px;
+}
+
+
+@media (min-width: 600px) {
+    nav ul{
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .showcase{
+        background-image: url("img/BgGaming.jpg");
+    }
+
+    .showcase_heading{
+        font-size: 4rem;
+    }
+
+    .showcase_subheading{
+        font-size: 2rem;
+    }
+
+    .showcase_cta{
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+
+    h1.greeting{
+        font-size: 4rem;
+    }
+
+    .info .heading{
+        font-size: 3rem;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+
+    .showcase{
+        background-image: url("img/BgGaming.jpg");
+    }
+
+    .showcase_heading{
+        font-size: 6rem;
+    }
+
+    .showcase_subheading{
+        font-size: 3rem;
+    }
+
+    .showcase_cta{
+        font-size: 1.2rem;
+        padding: 20px 40px;
+    }
+
+    h1.greeting{
+        font-size: 6rem;
+    }
+
+    .content_item{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content_item:nth-child(even) img{
+        order: 2;
+    }
+
+    .info{
+        width: 50%;
+    }
+}
